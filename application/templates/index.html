@@ -3,5 +3,12 @@
 {% block body %}
 
 <h2>These are the tasks:</h2> 
-
+{% for task in all_tasks %}
+<p>
+    <strong> Title: {{ task.task_title }}</strong> <br>
+    <i>Description: {{ task.description }}</i><br>
+    Completed: {{ task.completed }}<br>
+    <i>{{ task.date_created }}</i>
+</p> 
+{% endfor %}
 {% endblock body %}
