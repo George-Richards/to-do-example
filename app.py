@@ -1,5 +1,8 @@
 from application import app, db
 from os import getenv
+from flask import Flask
+
+
 
 if __name__ == "__main__":
     # Recreate the table schema in the database if environment variable

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+    <title>To Do List</title>
+</head>
+<body>
+    <navbar>
+        <a href="{{ url_for('index') }}">Homepage</a> 
+        <a href="{{ url_for('add_task') }}">Add a Task</a>
+    </navbar>
+    <h1>To Do List</h1>
+    {% block body %}
+    {% endblock body %}
+</body>
